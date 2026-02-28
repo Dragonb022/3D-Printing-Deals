@@ -3,10 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filament Deals Hub</title>
+  <title>3D Printing Deals Hub</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 20px 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      max-width: 1100px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      border-left: 6px solid #111;
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0077ff;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #005fcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Filament Deals Hub</h1>
-  <p>This page will list my best filament deals.</p>
+
+<header>
+  <img 
+    src="https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/612498502_10102168812045190_5557250161812687878_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=25d718&_nc_ohc=mIXtyauWOMEQ7kNvwGeQasU&_nc_oc=Adm2-rL0ZRpxOYCd3jz56NWKW_VUsOFatK0cJi2aurS_WAL0yEWC-tTuXeD_nVRloW9QBVzuxbgBZgLkHAnUnp4h&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=jfnbwwNR6Jgb2VBCVuF7rQ&_nc_ss=8&oh=00_AftKC-LqdGrTTDkgpjhVOgeilrVsh00ggGCa26-pymkVRA&oe=69A90256"
+    alt="3D Printing Deals Banner"
+  >
+  <h1>3D Printing Deals Hub</h1>
+  <p>Updated regularly with the best prices on printers, filament, storage, and accessories.</p>
+</header>
+
+<!-- =======================
+     3D PRINTERS
+======================= -->
+<div class="section">
+  <h2>3D Printers</h2>
+  <div class="grid">
+
+    <!-- AD5X -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71EC0HMmxGL._AC_SL1500_.jpg" alt="FLASHFORGE AD5X">
+      <div class="title">FLASHFORGE AD5X</div>
+      <div class="desc">High‑speed enclosed printer with reliable performance and clean prints.</div>
+      <a class="btn" href="https://www.amazon.com/dp/B0DN68QV3B?th=1&linkCode=ll2&tag=thediscove081-20&linkId=d9ba0d843e62dd39364a342a1287c0eb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Anycubic Kobra 3 Combo -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41BsufF7DbL._AC_.jpg" alt="Anycubic Kobra 3 Combo">
+      <div class="title">Anycubic Kobra 3 Combo</div>
+      <div class="desc">Fast, reliable, and multicolor‑ready with AMS‑style filament handling.</div>
+      <a class="btn" href="https://www.amazon.com/dp/B0F8Q4F66M?&linkCode=ll2&tag=thediscove081-20&linkId=2af5c0c519b2eebd71e55ddcab39ceb2&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Creality K2 Combo -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71McVJEDUzL._AC_SL1500_.jpg" alt="Creality K2 Combo">
+      <div class="title">Creality K2 Combo</div>
+      <div class="desc">Next‑gen multicolor printing with auto‑leveling and smooth operation.</div>
+      <a class="btn" href="https://www.amazon.com/Creality-Multicolor-Printing-Leveling-Next-Gen/dp/B0FC2CZ11V?&linkCode=ll2&tag=thediscove081-20&linkId=916ab051902012338099afcd1e375cf4&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Elegoo Centauri -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Elegoo+Centauri" alt="Elegoo Centauri">
+      <div class="title">Elegoo Centauri</div>
+      <div class="desc">High‑temp, multicolor‑capable printer with a strong build volume.</div>
+      <a class="btn" href="https://www.amazon.com/ELEGOO-Centauri-Multicolor-High-Temp-256x256x256mm/dp/B0G4TPZPZM?&linkCode=ll2&tag=thediscove081-20&linkId=bde61a577e776fb7d8baf663fff1cf50&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- QIDI -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/618LOkh77bL._AC_SL1280_.jpg" alt="QIDI High-Speed Printer">
+      <div class="title">QIDI High‑Speed Printer</div>
+      <div class="desc">High‑speed coreXY performance with excellent reliability and precision.</div>
+      <a class="btn" href="https://www.amazon.com/QIDI-High-Speed-Printing-Integrated-Filaments/dp/B0DBQ8MZX6?&linkCode=ll2&tag=thediscove081-20&linkId=af09901b741c92c0771b24a2ed7d9a30&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- =======================
+     FILAMENT
+======================= -->
+<div class="section">
+  <h2>Filament</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Filament" alt="Filament">
+      <div class="title">Filament Deal</div>
+      <div class="desc">Add your filament deals here.</div>
+      <a class="btn" href="#" target="_blank">Buy Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- =======================
+     FILAMENT STORAGE
+======================= -->
+<div class="section">
+  <h2>Filament Storage</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Storage" alt="Filament Storage">
+      <div class="title">Storage Deal</div>
+      <div class="desc">Add your storage deals here.</div>
+      <a class="btn" href="#" target="_blank">Buy Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- =======================
+     ACCESSORIES
+======================= -->
+<div class="section">
+  <h2>Accessories</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Accessory" alt="Accessory">
+      <div class="title">Accessory Deal</div>
+      <div class="desc">Add your accessory deals here.</div>
+      <a class="btn" href="#" target="_blank">Buy Now</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 3D Printing Deals Hub — Updated Weekly
+</footer>
+
 </body>
 </html>
